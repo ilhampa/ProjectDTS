@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@800&display=swap');
+
+$main-bg: #ffffff;
+$grey-bg: #fbfbfb;
+$black: #000000;
+$aqua-blue: #f7fafc;
+
+body {
+
+}
+
+nav{
+    display: : flex;
+    justify-content: space-between;
+    align-items : center;
+    margin: 0 70px;
+    color: $black;
+    .title{
+        font-size:  24px;
+        font-weight: bold;
+
+    .search {
+        input {
+            border-style: none;
+            &#focus-visible {
+                outline:none;
+            }
+        }
+    }
+
+    }
+    a{
+        font-size: 16px;
+        text-decoration: none;
+        margin: 0 14px;
+        color: $black;
+    } 
+
+}

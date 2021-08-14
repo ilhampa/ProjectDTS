@@ -1,0 +1,49 @@
+/*
+Error: Invalid CSS after "    display: ": expected expression (e.g. 1px, bold), was ": flex;"
+        on line 13 of app.scss
+
+8: body {
+9: 
+10: }
+11: 
+12: nav{
+13:     display: : flex;
+14:     justify-content: space-between;
+15:     align-items : center;
+16:     margin: 0 70px;
+17:     color: $black;
+18:     .title{
+
+Backtrace:
+app.scss:13
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1308:in `expected'
+/usr/lib/ruby/vendor_ruby/sass/script/lexer.rb:240:in `expected!'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:855:in `assert_expr'
+/usr/lib/ruby/vendor_ruby/sass/script/parser.rb:68:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1164:in `sass_script'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1002:in `value!'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:807:in `block in try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:1284:in `rethrow'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:820:in `try_declaration'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:743:in `declaration_or_ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:708:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:697:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:689:in `block'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:681:in `ruleset'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:707:in `block_child'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:700:in `block_contents'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:137:in `stylesheet'
+/usr/lib/ruby/vendor_ruby/sass/scss/parser.rb:41:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:414:in `_to_tree'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:383:in `run'
+/usr/lib/ruby/vendor_ruby/sass/exec/sass_scss.rb:63:in `process_result'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:50:in `parse'
+/usr/lib/ruby/vendor_ruby/sass/exec/base.rb:18:in `parse!'
+/usr/bin/sass:8:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    display: \": expected expression (e.g. 1px, bold), was \": flex;\"\A         on line 13 of app.scss\A \A 8: body {\A 9: \A 10: }\A 11: \A 12: nav{\A 13:     display: : flex;\A 14:     justify-content: space-between;\A 15:     align-items : center;\A 16:     margin: 0 70px;\A 17:     color: $black;\A 18:     .title{"; }
