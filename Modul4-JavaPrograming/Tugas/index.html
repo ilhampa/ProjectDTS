@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Convert Suhu</title>
+</head>
+
+<body style="background-color: rgb(145, 145, 145);">
+    <div class="main">
+        <div class="input row">
+            <div class="col-md-6 d-flex flex-column">
+                <div class="tulisanAtas">
+                    <form>
+                        <div>
+                            <label for="suhu">Suhu</label>
+                            <input type="number" id="suhu" class="suhu" name="suhu">
+                        </div>
+                        <div>
+                            <label for="awal">Temperatur Awal</label>
+                            <select name="awal" id="awal">
+                                <option value="Fahrenheit">Fahrenheit</option>
+                                <option value="Celcius">Celcius</option>
+                                <option value="Kelvin">Kelvin</option>
+                                <option value="Reamur">Reamur</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="akhir">Temperatur To</label>
+                            <select name="akhir" id="akhir">
+                                <option value="Fahrenheit">Fahrenheit</option>
+                                <option value="Celcius">Celcius</option>
+                                <option value="Kelvin">Kelvin</option>
+                                <option value="Reamur">Reamur</option>
+                            </select>
+                        </div>
+                        <div>
+                            <button class="btnConvert" id="convert" type="button">Convert</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="tulisanBawah">
+                    <label style="margin-left: 10px; margin-top: 30px;" class="hasil-label" for="">Hasil</label>
+                    <div style="margin-left: 10px;" class="tulisanBawah" id="Hasil" ><b>Hasil</b></div>
+                </div>
+            </div>
+            <div class="d-flex col-md-6 justify-content-center align-items-center flex-column">
+                     <h1 style="font-weight: 600; line-height: 40px; margin-bottom: 50px; text-align: center; color: #0e83e9;">Temperatures Converter</h1>
+                <div class="textColor">
+                </div>
+                <input type="color" class="color" id="pageColor">
+                <div>
+                    <button class="btnBackground" onclick="ChangeColor()">Background</button>
+                </div>
+
+                <div class="tulisanBawah">
+                    <label for="">Hex</label>
+                </div>
+                <div class="result" id="angka"><b>#dce3de</b></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function ChangeColor() {
+            var x;
+            x = document.getElementById("pageColor").value;
+            document.body.style.backgroundColor = x;
+            document.getElementById("angka").innerHTML = x;
+        }
+    </script>
+    <script type="text/javascript" defer src="convert.js"></script>
+</body>
+
+</html>

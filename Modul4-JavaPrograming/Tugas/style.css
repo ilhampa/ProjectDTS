@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-width: 100vh;
+    margin-top: 120px;
+}
+
+.input {
+    background-color: #fff;
+    width: 720px;
+    height: auto;
+    padding: 25px 25px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+
+}
+
+.tulisanAtas {
+    display: flex;
+    flex-direction: row;
+}
+
+form div {
+    margin: 0 10px;
+}
+
+label,
+.hasil-label,
+.formula-label,
+.color-label {
+    font-size: 15px;
+    color: #0e83e9;
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 700;
+}
+
+.suhu {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 12px 20px;
+    border: 2px solid #0e83e9;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+.hasil {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 20px;
+    border: 2px solid #0e83e9;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+.hasilconvert {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 20px 20px;
+    border: 2px solid #0e83e9;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: block;
+}
+
+select {
+    font-size: 15px;
+    font-weight: 300;
+    padding: 12px 20px;
+    border: 2px solid #0e83e9;
+    border-radius: 5px;
+    width: 200px;
+    background-color: white;
+    margin-top: 10px;
+    display: block;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+}
+
+.btnConvert,
+.btnBackground {
+    background-color: #0e83e9;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 32px;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 20px;
+    height: 50px;
+    transition: 0.5s;
+}
+
+.color {
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: unset;
+}
